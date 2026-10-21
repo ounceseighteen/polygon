@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Items</title></head>
+<body>
+<h1>Товары</h1>
+<table border="1">
+<tr><th>ID</th><th>Название</th><th>Цена</th><th>Остаток</th></tr>
+{% for it in items %}
+<tr><td>{{ it.id }}</td><td>{{ it.name }}</td>
+    <td>{{ it.price }}</td><td>{{ it.qty }}</td></tr>
+{% endfor %}
+</table>
+</body></html>
